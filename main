@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Lütfen sayi giriniz\t: ");
+        int girilenSayi = scanner.nextInt();
+        int sayac = 0;
+
+        for (int i = 1; i < girilenSayi; i++) {
+
+            if (girilenSayi % i == 0) {
+                sayac += i;
+            }
+        }
+        if (girilenSayi==sayac){
+            System.out.println(girilenSayi+" sayisi mükemmel sayidir");
+        }else {
+            System.out.println(girilenSayi+" sayisi mükemmel sayi değildir!!!");
+        }
+    }
+}
